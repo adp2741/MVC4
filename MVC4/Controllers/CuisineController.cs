@@ -13,9 +13,9 @@ namespace MVC4.Controllers
         {
             var message = Server.HtmlEncode(name);
 
-            //return Content(string.Format("You were looking up {0}.", message));
+            return Content(string.Format("You were looking up {0}.", message));
             //return File(Server.MapPath("~/Content/site.css"), "text/css");
-            return Json(new object { Message = message, name = "Andrew" }, JsonRequestBehavior.AllowGet);
+            //return Json(new { Message = message, Name = "Andrew" }, JsonRequestBehavior.AllowGet);
         }
     }
 }
