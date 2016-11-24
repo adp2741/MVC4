@@ -9,6 +9,14 @@ namespace MVC4.Controllers
 {
     public class ReviewsController : Controller
     {
+        public ActionResult BestReview()
+        {
+            var bestReview = from r in _reviews
+                             orderby r.Rating descending
+                             select r;
+            return PartialView("_Review", bestReview.First());
+        }
+
         // GET: Reviews
         public ActionResult Index()
         {
@@ -96,7 +104,7 @@ namespace MVC4.Controllers
                 Name = "Cinnamon Club",
                 City = "London",
                 Country = "UK",
-                Rating = 10,
+                Rating = 8,
             },
             new RestaurantReview
             {
@@ -104,7 +112,7 @@ namespace MVC4.Controllers
                 Name = "Marrakesh",
                 City = "D.C.",
                 Country = "USA",
-                Rating = 10,
+                Rating = 9,
             },
             new RestaurantReview
             {
@@ -112,7 +120,7 @@ namespace MVC4.Controllers
                 Name = "The House of Elliot",
                 City = "Ghent",
                 Country = "Belgium",
-                Rating = 10,
+                Rating = 6,
             }
         };
     }
