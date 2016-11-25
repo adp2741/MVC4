@@ -8,6 +8,11 @@ namespace MVC4.Models
 {
     public class MVC4Db : DbContext
     {
+        public MVC4Db() : base("name=DefaultConnection")
+        {
+
+        }
+
         public DbSet<Restaurant> Restaurants { get; set; }
         public DbSet<RestaurantReview> Reviews { get; set; }
     }
