@@ -25,7 +25,8 @@ namespace MVC4.Controllers
         [HttpGet]
         public ActionResult Create(int restaurantId)
         {
-            return View();
+            var review = _db.Reviews.Find(restaurantId);
+            return View(review);
         }
 
         [HttpPost]
