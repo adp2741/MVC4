@@ -40,6 +40,25 @@ namespace MVC4.Controllers
             return View(review);
         }
 
+        [HttpPost]
+        public ActionResult Edit(RestaurantReview review)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.Entry(review).State = System.Data.Entity.EntityState.Modified;
+                _db.SaveChanges();
+                return RedirectToAction("Index", new { id = review.RestaurantId });
+            }
+            return View(review);
+        }
+
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            var model = _db.Reviews.Find(id);
+            return View(model);
+        }
+
         protected override void Dispose(bool disposing)
         {
             _db.Dispose();
