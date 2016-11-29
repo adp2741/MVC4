@@ -45,3 +45,6 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+.vs/config/applicationhost.config
+MVC4.Tests/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+MVC4/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
