@@ -31,6 +31,11 @@ namespace MVC4.Migrations
                             new RestaurantReview { Rating = 9, Body = "Great food!", ReviewerName = "Andrew Perry" }
                         }
                 });
+            for (int i = 0; i < 1000; ++i)
+            {
+                context.Restaurants.AddOrUpdate(r => r.Name,
+                    new Restaurant { Name = i.ToString(), City = "Nowhere", Country = "USA" });
+            }
         }
     }
 }
