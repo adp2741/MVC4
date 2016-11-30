@@ -58,3 +58,9 @@ MVC4/obj/Debug/MVC4.csproj.GenerateResource.Cache
 MVC4/obj/Debug/MVC4.csprojResolveAssemblyReference.cache
 MVC4/obj/Debug/MVC4.dll
 MVC4/obj/Debug/MVC4.pdb
+.vs/config/applicationhost.config
+MVC4.Tests/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+MVC4/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+.vs/config/applicationhost.config
+MVC4/App_Data/aspnet-MVC4-20161122080716.mdf
+MVC4/App_Data/aspnet-MVC4-20161122080716_log.ldf
