@@ -1,8 +1,10 @@
-﻿@model IEnumerable<MVC4.Models.RestaurantListViewModel>
+﻿@model IPagedList<MVC4.Models.RestaurantListViewModel>
 
 @{
     ViewBag.Title = "Home Page";
 }
+
+<br />
 
 <form method="get" action="@Url.Action("Index")"
       data-mvc4-ajax="true" data-mvc4-target="#restaurantList">

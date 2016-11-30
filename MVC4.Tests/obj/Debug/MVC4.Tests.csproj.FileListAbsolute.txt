@@ -54,3 +54,5 @@ c:\users\adp27\onedrive\documents\visual studio 2015\Projects\MVC4\MVC4.Tests\bi
 c:\users\adp27\onedrive\documents\visual studio 2015\Projects\MVC4\MVC4.Tests\obj\Debug\MVC4.Tests.csprojResolveAssemblyReference.cache
 c:\users\adp27\onedrive\documents\visual studio 2015\Projects\MVC4\MVC4.Tests\obj\Debug\MVC4.Tests.dll
 c:\users\adp27\onedrive\documents\visual studio 2015\Projects\MVC4\MVC4.Tests\obj\Debug\MVC4.Tests.pdb
+C:\Users\adp27\OneDrive\Documents\Visual Studio 2015\Projects\MVC4\MVC4.Tests\bin\Debug\PagedList.dll
+C:\Users\adp27\OneDrive\Documents\Visual Studio 2015\Projects\MVC4\MVC4.Tests\bin\Debug\PagedList.xml
