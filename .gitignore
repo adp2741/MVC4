@@ -45,3 +45,16 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+.vs/config/applicationhost.config
+MVC4.Tests/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+MVC4/App_Data/aspnet-MVC4-20161122080716.mdf
+MVC4/App_Data/aspnet-MVC4-20161122080716_log.ldf
+MVC4/bin/MVC4.dll
+MVC4/bin/MVC4.dll
+MVC4/bin/MVC4.pdb
+MVC4/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+MVC4/obj/Debug/MVC4.csproj.FileListAbsolute.txt
+MVC4/obj/Debug/MVC4.csproj.GenerateResource.Cache
+MVC4/obj/Debug/MVC4.csprojResolveAssemblyReference.cache
+MVC4/obj/Debug/MVC4.dll
+MVC4/obj/Debug/MVC4.pdb
