@@ -11,6 +11,7 @@ namespace MVC4.Migrations
     {
         public Configuration()
         {
+            AutomaticMigrationDataLossAllowed = true;
             AutomaticMigrationsEnabled = true;
             ContextKey = "MVC4.Models.MVC4Db";
         }

@@ -60,6 +60,7 @@ namespace MVC4.Controllers
             return View(model);
         }
 
+        [Authorize]
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
