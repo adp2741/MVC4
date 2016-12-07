@@ -80,7 +80,6 @@ c:\users\adp27\onedrive\documents\visual studio 2015\Projects\MVC4\MVC4\bin\Micr
 c:\users\adp27\onedrive\documents\visual studio 2015\Projects\MVC4\MVC4\bin\Microsoft.AI.Web.xml
 c:\users\adp27\onedrive\documents\visual studio 2015\Projects\MVC4\MVC4\bin\Microsoft.AI.WindowsServer.xml
 c:\users\adp27\onedrive\documents\visual studio 2015\Projects\MVC4\MVC4\bin\Microsoft.ApplicationInsights.xml
-C:\Users\adp27\OneDrive\Documents\Visual Studio 2015\Projects\MVC4\MVC4\obj\Debug\MVC4.Migrations.InitialCreate.resources
 C:\Users\adp27\OneDrive\Documents\Visual Studio 2015\Projects\MVC4\MVC4\obj\Debug\MVC4.csproj.GenerateResource.Cache
 C:\Users\adp27\OneDrive\Documents\Visual Studio 2015\Projects\MVC4\MVC4\bin\PagedList.dll
 C:\Users\adp27\OneDrive\Documents\Visual Studio 2015\Projects\MVC4\MVC4\bin\PagedList.Mvc.dll
