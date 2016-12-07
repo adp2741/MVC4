@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using PagedList;
+using System.Configuration;
 
 namespace MVC4.Controllers
 {
@@ -26,19 +27,9 @@ namespace MVC4.Controllers
             return Json(model, JsonRequestBehavior.AllowGet);
         }
 
+        [OutputCache(CacheProfile = "Long", VaryByHeader = "X-Requested-With", Location = System.Web.UI.OutputCacheLocation.Server)]
         public ActionResult Index(string searchTerm = null, int page = 1)
         {
-            //var model = from r in _db.Restaurants
-            //            orderby r.Reviews.Average(review => review.Rating) descending
-            //            select new RestaurantListViewModel
-            //            {
-            //                Id = r.Id,
-            //                Name = r.Name,
-            //                City = r.City,
-            //                Country = r.Country,
-            //                CountOfReviews = r.Reviews.Count()
-            //            };
-
             var model =
                 _db.Restaurants
                 .OrderByDescending(r => r.Reviews.Average(review => review.Rating))
@@ -52,6 +43,8 @@ namespace MVC4.Controllers
                     CountOfReviews = r.Reviews.Count()
                 }).ToPagedList(page, 10);
 
+            ViewBag.MailServer = ConfigurationManager.AppSettings["MailServer"]
+;
             if (Request.IsAjaxRequest())
             {
                 return PartialView("_Restaurants", model);
