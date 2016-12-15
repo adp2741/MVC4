@@ -1,0 +1,13 @@
+﻿@model MVC4.Models.Restaurant
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Review for @Model.Name</h2>
+
+@Html.Partial("_Reviews", Model.Reviews)
+
+<p>
+    @Html.ActionLink("Create New", "Create", new { restaurantId = Model.Id })
+</p>
